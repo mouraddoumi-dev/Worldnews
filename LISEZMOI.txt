@@ -1,0 +1,15 @@
+WORLD NEWS - agrégateur de news (BBC, Al Jazeera, France 24, Le Monde)
+
+OPTION A - depuis le téléphone, sans PC (GitHub Actions)
+1. Crée un compte gratuit sur github.com, puis un nouveau dépôt (New repository).
+2. Envoie tout le contenu de ce dossier dans le dépôt (Add file > Upload files).
+   Important : le dossier cache .github doit être inclus.
+3. Onglet Actions > "Build APK" > Run workflow (ou il démarre seul au push).
+4. Après ~4 minutes, ouvre l'exécution terminée > Artifacts > WorldNews-apk.
+5. Télécharge, décompresse le zip, ouvre app-debug.apk, autorise
+   "Installer des applications inconnues" quand Android le demande.
+
+OPTION B - avec Android Studio (PC)
+1. File > Open > dossier WorldNews, attendre la synchronisation Gradle.
+2. Build > Build Bundle(s) / APK(s) > Build APK(s).
+3. L'APK est dans app/build/outputs/apk/debug/app-debug.apk
